@@ -1,22 +1,29 @@
 package com.zgiot.common.pojo;
 
+import com.alibaba.fastjson.annotation.JSONField;
+
 import java.io.Serializable;
 import java.util.Date;
 
 public class DataModel implements Serializable, Cloneable {
     // 物体分类code
+    @JSONField(name="tcc")
     private String thingCategoryCode;
     // 物体code
+    @JSONField(name="tc")
     private String thingCode;
     // 指标分类code
+    @JSONField(name="mcc")
     private String metricCategoryCode;
     // 指标code
+    @JSONField(name="mc")
     private String metricCode;
     // 值
+    @JSONField(name="v")
     private Object value;
     // 值产生的时间戳
+    @JSONField(name="dt")
     private Date dataTimeStamp;
-
 
     public String getThingCategoryCode() {
         return thingCategoryCode;
