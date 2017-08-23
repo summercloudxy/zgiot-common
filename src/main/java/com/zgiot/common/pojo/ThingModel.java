@@ -3,6 +3,10 @@ package com.zgiot.common.pojo;
 import java.io.Serializable;
 
 public class ThingModel implements Serializable, Cloneable {
+    public static final String CATEGORY_DEVICE = "DVC";
+    public static final String CATEGORY_SYSTEM = "SYS";
+    public static final String CATEGORY_ERROR = "ERR";
+
     private String categoryCode;
     private String code;
     private String name;
