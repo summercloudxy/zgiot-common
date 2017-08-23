@@ -1,5 +1,7 @@
 package com.zgiot.common.pojo;
 
-public class MetricModel {
-    public static final String M_CATEGORY_SIGNAL = "SIG";
+import java.io.Serializable;
+
+public class MetricModel implements Serializable, Cloneable {
+    public static final String CATEGORY_SIGNAL = "SIG";
 }
