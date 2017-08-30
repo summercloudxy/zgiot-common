@@ -72,4 +72,29 @@ public class DataModel implements Serializable, Cloneable {
     public void setDataTimeStamp(Date dataTimeStamp) {
         this.dataTimeStamp = dataTimeStamp;
     }
+
+    public static Object parseValueFromString(String valueStr, String valueType){
+        switch (valueType) {
+            case MetricModel.VALUE_TYPE_BOOL:
+                return Boolean.valueOf(valueStr);
+            case MetricModel.VALUE_TYPE_SHORT:
+                return Short.valueOf(valueStr);
+            case MetricModel.VALUE_TYPE_FLOAT:
+                return Float.valueOf(valueStr);
+        }
+
+        return valueStr;
+    }
+
+    @Override
+    public String toString() {
+        return "DataModel{" +
+                "thingCategoryCode='" + thingCategoryCode + '\'' +
+                ", thingCode='" + thingCode + '\'' +
+                ", metricCategoryCode='" + metricCategoryCode + '\'' +
+                ", metricCode='" + metricCode + '\'' +
+                ", value=" + value +
+                ", dataTimeStamp=" + dataTimeStamp +
+                '}';
+    }
 }

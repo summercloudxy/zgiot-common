@@ -81,4 +81,18 @@ public class ThingModel implements Serializable, Cloneable {
     public void setThingType3Code(String thingType3Code) {
         this.thingType3Code = thingType3Code;
     }
+
+    @Override
+    public String toString() {
+        return "ThingModel{" +
+                "id=" + id +
+                ", parentThingId=" + parentThingId +
+                ", thingCode='" + thingCode + '\'' +
+                ", thingCategoryCode='" + thingCategoryCode + '\'' +
+                ", thingName='" + thingName + '\'' +
+                ", thingType1Code='" + thingType1Code + '\'' +
+                ", thingType2Code='" + thingType2Code + '\'' +
+                ", thingType3Code='" + thingType3Code + '\'' +
+                '}';
+    }
 }

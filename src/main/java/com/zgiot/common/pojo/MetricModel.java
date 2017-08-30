@@ -3,7 +3,8 @@ package com.zgiot.common.pojo;
 import java.io.Serializable;
 
 public class MetricModel implements Serializable, Cloneable {
-    public static final String CATEGORY_SIGNAL = "SIG";
+    public static final String CATEGORY_SIGNAL = "SIG"; // 信号 signal
+    public static final String CATEGORY_ASSAY = "ASSAY"; // 化验数据
 
     public static final String VALUE_TYPE_SHORT = "ST"; // 0,1 不足描述的状态
     public static final String VALUE_TYPE_FLOAT = "F";
@@ -94,5 +95,20 @@ public class MetricModel implements Serializable, Cloneable {
 
     public void setValueUnit(String valueUnit) {
         this.valueUnit = valueUnit;
+    }
+
+    @Override
+    public String toString() {
+        return "MetricModel{" +
+                "id=" + id +
+                ", metricCategoryCode='" + metricCategoryCode + '\'' +
+                ", metricName='" + metricName + '\'' +
+                ", metricCode='" + metricCode + '\'' +
+                ", metricType1Code='" + metricType1Code + '\'' +
+                ", metricType2Code='" + metricType2Code + '\'' +
+                ", metricType3Code='" + metricType3Code + '\'' +
+                ", valueType='" + valueType + '\'' +
+                ", valueUnit='" + valueUnit + '\'' +
+                '}';
     }
 }
