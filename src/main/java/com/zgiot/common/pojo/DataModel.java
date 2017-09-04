@@ -25,6 +25,26 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(name="dt")
     private Date dataTimeStamp;
 
+    public DataModel(String thingCategoryCode, String thingCode, String metricCategoryCode, String metricCode, Object value, Date dataTimeStamp) {
+        this.thingCategoryCode = thingCategoryCode;
+        this.thingCode = thingCode;
+        this.metricCategoryCode = metricCategoryCode;
+        this.metricCode = metricCode;
+        this.value = value;
+        this.dataTimeStamp = dataTimeStamp;
+    }
+
+    public DataModel() {
+    }
+
+    @Override
+    public DataModel clone() {
+        try {
+            return (DataModel)super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public String getThingCategoryCode() {
         return thingCategoryCode;
     }
@@ -84,6 +104,10 @@ public class DataModel implements Serializable, Cloneable {
         }
 
         return valueStr;
+    }
+
+    public static String genKey(String thingCode, String metricCode){
+        return thingCode+"_"+metricCode;
     }
 
     @Override
