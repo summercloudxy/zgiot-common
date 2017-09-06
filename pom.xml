@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zgiot</groupId>
-    <artifactId>common</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>zgiot-common</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
 
     <properties>
         <!--构建信息-->
@@ -21,6 +22,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.6.RELEASE</version>
+        <relativePath></relativePath>
     </parent>
 
     <dependencies>
@@ -34,57 +36,5 @@
             <version>${version.fastjson}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.0</version>
-                <configuration>
-                    <source>${maven.compiler.source}</source> <!-- 源代码使用的开发版本 -->
-                    <target>${maven.compiler.target}</target> <!-- 需要生成的目标class文件的编译版本 -->
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.0.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-    </build>
-
-    <distributionManagement>
-        <repository>
-            <id>nexus-3rd</id>
-            <url>http://192.168.3.173:8081/nexus/content/repositories/thirdparty/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>Snapshot</name>
-            <url>http://192.168.3.173:8081/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-
-    </distributionManagement>
-
 
 </project>
