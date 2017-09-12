@@ -1,15 +1,22 @@
 package com.zgiot.common.constants;
 
+import com.zgiot.common.annotation.KepServerMapping;
+
+import static com.zgiot.common.annotation.KepServerMapping.*;
+
 /**
  * 压滤用metric
  */
 public class FilterPressConstants {
+
     public static final String STATE = "STATE"; //状态
 
     public static final String STAGE = "STAGE"; //压滤机阶段
 
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.9")
     public static final String WATER_FWD = "WATER_FWD"; //水洗前移
 
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.10")
     public static final String WATER_BWD = "WATER_BWD"; //水洗后移
 
     public static final String SHOWER_UP = "SHOWER_UP"; //喷头上移
@@ -162,6 +169,7 @@ public class FilterPressConstants {
 
     public static final String T3_COUNT = "T3_COUNT"; //三队过滤次数
 
+    @KepServerMapping(dataType = DATATYPE_DINT, rwType = READ_ONLY, position = "40014[2]")
     public static final String TOTL_COUNT = "TOTL_COUNT"; //总记录
 
     public static final String JL_DELAY = "JL_DELAY"; //进料延时
