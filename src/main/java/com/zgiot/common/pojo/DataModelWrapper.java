@@ -25,7 +25,7 @@ public final class DataModelWrapper {
         return dataModel.getMetricCode();
     }
 
-    public Object getValue() {
+    public String getValue() {
         return dataModel.getValue();
     }
 

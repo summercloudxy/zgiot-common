@@ -20,12 +20,13 @@ public class DataModel implements Serializable, Cloneable {
     private String metricCode;
     // 值
     @JSONField(name="v")
-    private Object value;
+    private String value;
     // 值产生的时间戳
     @JSONField(name="dt")
     private Date dataTimeStamp;
 
-    public DataModel(String thingCategoryCode, String thingCode, String metricCategoryCode, String metricCode, Object value, Date dataTimeStamp) {
+    public DataModel(String thingCategoryCode, String thingCode, String metricCategoryCode
+            , String metricCode, String value, Date dataTimeStamp) {
         this.thingCategoryCode = thingCategoryCode;
         this.thingCode = thingCode;
         this.metricCategoryCode = metricCategoryCode;
@@ -77,11 +78,11 @@ public class DataModel implements Serializable, Cloneable {
         this.metricCode = metricCode;
     }
 
-    public Object getValue() {
+    public String getValue() {
         return value;
     }
 
-    public void setValue(Object value) {
+    public void setValue(String value) {
         this.value = value;
     }
 
@@ -101,6 +102,7 @@ public class DataModel implements Serializable, Cloneable {
                 return Short.valueOf(valueStr);
             case MetricModel.VALUE_TYPE_FLOAT:
                 return Float.valueOf(valueStr);
+            // DINT is not used for sending cmd so far
         }
 
         return valueStr;
