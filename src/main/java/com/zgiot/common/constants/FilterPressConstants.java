@@ -180,7 +180,7 @@ public class FilterPressConstants {
 
     public static final String CF_TIME = "CF_TIME"; //吹风时间
 
-    public static final String _1QB_S_TIME = "1QB_S_TIME"; //首次取板高速时间
+    public static final String FIRST_QB_S_TIME = "1QB_S_TIME"; //首次取板高速时间
 
     public static final String QB_S_TIME = "QB_S_TIME"; //取板高速时间
 
@@ -258,7 +258,7 @@ public class FilterPressConstants {
 
     public static final String FEED = "FEED"; //远程手动进料
 
-    public static final String SQUEESE = "SQUEESE"; //远程手动压榨
+    public static final String SQUEEZE = "SQUEEZE"; //远程手动压榨
 
     public static final String BLOW = "BLOW"; //远程手动吹风
 
@@ -277,5 +277,21 @@ public class FilterPressConstants {
     public static final String T2_CHOOSE = "T2_CHOOSE"; //二队选择
 
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
+
+    public static final short STAGE_LOOSEN = 0;//压滤阶段-松开
+
+    public static final short STAGE_TAKEN = 1;//压滤阶段-取板
+
+    public static final short STAGE_PULL = 2;//压滤阶段-拉板
+
+    public static final short STAGE_PRESS = 3;//压滤阶段-压紧
+
+    public static final short STAGE_FEEDING = 4;//压滤阶段-进料
+
+    public static final short STAGE_FEED_OVER = 5;//压滤阶段-进料结束
+
+    public static final short STAGE_BLOW = 6;//压滤阶段-吹风
+
+    public static final short STAGE_CYCLE = 7;//压滤阶段-循环等待
 
 }
