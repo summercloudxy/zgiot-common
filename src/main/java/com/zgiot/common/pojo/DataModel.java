@@ -135,10 +135,10 @@ public class DataModel implements Serializable, Cloneable {
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return "DataModel{" +
-                "thingCategoryCode='" + thingCategoryCode + '\'' +
-                ", thingCode='" + thingCode + '\'' +
-                ", metricCategoryCode='" + metricCategoryCode + '\'' +
-                ", metricCode='" + metricCode + '\'' +
+                "tcc='" + thingCategoryCode + '\'' +
+                ", tc='" + thingCode + '\'' +
+                ", mcc='" + metricCategoryCode + '\'' +
+                ", mc='" + metricCode + '\'' +
                 ", value=" + value +
                 ", date=" + sdf.format(dataTimeStamp) +
                 ", ts=" + dataTimeStamp.getTime() +
