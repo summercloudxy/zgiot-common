@@ -1,12 +1,14 @@
 package com.zgiot.common.constants;
 
 import com.zgiot.common.annotation.KepServerMapping;
+import org.springframework.stereotype.Component;
 
 import static com.zgiot.common.annotation.KepServerMapping.*;
 
 /**
  * 压滤用metric
  */
+@Component
 public class FilterPressMetricConstants {
 
     public static final String STATE = "STATE"; //状态
