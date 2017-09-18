@@ -1,5 +1,6 @@
 package com.zgiot.common.restcontroller;
 
+import com.alibaba.fastjson.JSON;
 import com.zgiot.common.exceptions.SysException;
 
 public class ServerResponse<T> {
@@ -17,6 +18,16 @@ public class ServerResponse<T> {
         return new ServerResponse(
                 e.getMessage(), e.getErrorCode(), e.getData()
         );
+    }
+
+    public static ServerResponse buildOK(Object data) {
+        return new ServerResponse(
+                "OK", SysException.EC_SUCCESS, data
+        );
+    }
+
+    public static String buildOkJson(Object data) {
+        return JSON.toJSONString(buildOK(data));
     }
 
     public String getMessage() {
