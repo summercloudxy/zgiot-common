@@ -277,4 +277,6 @@ public class FilterPressMetricConstants {
     public static final String T2_CHOOSE = "T2_CHOOSE"; //二队选择
 
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
+
+    public static final String FEED_ASUM = "FEED_ASUM"; //进料结束系统判断
 }
