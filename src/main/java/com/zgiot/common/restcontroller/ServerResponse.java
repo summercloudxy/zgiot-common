@@ -1,15 +1,16 @@
 package com.zgiot.common.restcontroller;
 
+import com.alibaba.fastjson.JSON;
 import com.zgiot.common.exceptions.SysException;
 
 public class ServerResponse<T> {
     private String message;
-    private Integer errorCode;
+    private Integer code;
     private T data;
 
     public ServerResponse(String message, Integer errorCode, T data) {
         this.message = message;
-        this.errorCode = errorCode;
+        this.code = errorCode;
         this.data = data;
     }
 
@@ -17,6 +18,16 @@ public class ServerResponse<T> {
         return new ServerResponse(
                 e.getMessage(), e.getErrorCode(), e.getData()
         );
+    }
+
+    public static ServerResponse buildOK(Object data) {
+        return new ServerResponse(
+                "OK", SysException.EC_SUCCESS, data
+        );
+    }
+
+    public static String buildOkJson(Object data) {
+        return JSON.toJSONString(buildOK(data));
     }
 
     public String getMessage() {
@@ -27,12 +38,12 @@ public class ServerResponse<T> {
         this.message = message;
     }
 
-    public Integer getErrorCode() {
-        return errorCode;
+    public Integer getCode() {
+        return code;
     }
 
-    public void setErrorCode(Integer errorCode) {
-        this.errorCode = errorCode;
+    public void setCode(Integer code) {
+        this.code = code;
     }
 
     public T getData() {
@@ -47,7 +58,7 @@ public class ServerResponse<T> {
     public String toString() {
         return "ServerResponse{" +
                 "message='" + message + '\'' +
-                ", errorCode=" + errorCode +
+                ", code=" + code +
                 ", data=" + data +
                 '}';
     }

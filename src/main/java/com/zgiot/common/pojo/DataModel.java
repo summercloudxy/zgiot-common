@@ -3,26 +3,30 @@ package com.zgiot.common.pojo;
 import com.alibaba.fastjson.annotation.JSONField;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DataModel implements Serializable, Cloneable {
     // 物体分类code
-    @JSONField(name="tcc")
+    @JSONField(name = "tcc")
     private String thingCategoryCode;
     // 物体code
-    @JSONField(name="tc")
+    @JSONField(name = "tc")
     private String thingCode;
     // 指标分类code
-    @JSONField(name="mcc")
+    @JSONField(name = "mcc")
     private String metricCategoryCode;
     // 指标code
-    @JSONField(name="mc")
+    @JSONField(name = "mc")
     private String metricCode;
     // 值
-    @JSONField(name="v")
+    @JSONField(name = "v")
     private String value;
+
+    private Object valueObj;
+
     // 值产生的时间戳
-    @JSONField(name="dt")
+    @JSONField(name = "dt")
     private Date dataTimeStamp;
 
     public DataModel(String thingCategoryCode, String thingCode, String metricCategoryCode
@@ -41,11 +45,22 @@ public class DataModel implements Serializable, Cloneable {
     @Override
     public DataModel clone() {
         try {
-            return (DataModel)super.clone();
+            return (DataModel) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException(e);
         }
     }
+
+    /**
+     *
+     * @param valueType  to get metric first, then get value type from metric
+     */
+    public void initValueByType(String valueType) {
+        if (this.valueObj == null) {
+            this.valueObj = parseValueFromString(this.getValue(), valueType);
+        }
+    }
+
     public String getThingCategoryCode() {
         return thingCategoryCode;
     }
@@ -94,7 +109,7 @@ public class DataModel implements Serializable, Cloneable {
         this.dataTimeStamp = dataTimeStamp;
     }
 
-    public static Object parseValueFromString(String valueStr, String valueType){
+    public static Object parseValueFromString(String valueStr, String valueType) {
         switch (valueType) {
             case MetricModel.VALUE_TYPE_BOOL:
                 return Boolean.valueOf(valueStr);
@@ -108,19 +123,25 @@ public class DataModel implements Serializable, Cloneable {
         return valueStr;
     }
 
-    public static String genKey(String thingCode, String metricCode){
-        return thingCode+"_"+metricCode;
+    public static String genKey(String thingCode, String metricCode) {
+        return thingCode + "_" + metricCode;
+    }
+
+    public Object getValueObj() {
+        return valueObj;
     }
 
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return "DataModel{" +
-                "thingCategoryCode='" + thingCategoryCode + '\'' +
-                ", thingCode='" + thingCode + '\'' +
-                ", metricCategoryCode='" + metricCategoryCode + '\'' +
-                ", metricCode='" + metricCode + '\'' +
+                "tcc='" + thingCategoryCode + '\'' +
+                ", tc='" + thingCode + '\'' +
+                ", mcc='" + metricCategoryCode + '\'' +
+                ", mc='" + metricCode + '\'' +
                 ", value=" + value +
-                ", dataTimeStamp=" + dataTimeStamp +
+                ", date=" + sdf.format(dataTimeStamp) +
+                ", ts=" + dataTimeStamp.getTime() +
                 '}';
     }
 }
