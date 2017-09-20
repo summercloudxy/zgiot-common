@@ -279,4 +279,8 @@ public class FilterPressMetricConstants {
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
 
     public static final String FEED_ASUM = "FEED_ASUM"; //进料结束系统判断
+
+    public static final String PLATE_CNT = "PLATE_CNT"; //压滤机当前板数
+
+    public static final String PLATE_TTL = "PLATE_TTL"; //压滤机总板数
 }
