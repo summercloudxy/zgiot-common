@@ -3,6 +3,7 @@ package com.zgiot.common.pojo;
 import com.alibaba.fastjson.annotation.JSONField;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DataModel implements Serializable, Cloneable {
@@ -132,13 +133,15 @@ public class DataModel implements Serializable, Cloneable {
 
     @Override
     public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return "DataModel{" +
-                "thingCategoryCode='" + thingCategoryCode + '\'' +
-                ", thingCode='" + thingCode + '\'' +
-                ", metricCategoryCode='" + metricCategoryCode + '\'' +
-                ", metricCode='" + metricCode + '\'' +
+                "tcc='" + thingCategoryCode + '\'' +
+                ", tc='" + thingCode + '\'' +
+                ", mcc='" + metricCategoryCode + '\'' +
+                ", mc='" + metricCode + '\'' +
                 ", value=" + value +
-                ", dataTimeStamp=" + dataTimeStamp +
+                ", date=" + sdf.format(dataTimeStamp) +
+                ", ts=" + dataTimeStamp.getTime() +
                 '}';
     }
 }

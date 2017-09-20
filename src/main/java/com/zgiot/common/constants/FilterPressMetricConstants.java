@@ -414,4 +414,6 @@ public class FilterPressMetricConstants {
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_WRITE, position = "40049.7")
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
+
+    public static final String FEED_ASUM = "FEED_ASUM"; //进料结束系统判断
 }
