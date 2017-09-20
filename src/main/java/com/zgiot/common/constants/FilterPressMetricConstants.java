@@ -416,4 +416,6 @@ public class FilterPressMetricConstants {
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
 
     public static final String FEED_ASUM = "FEED_ASUM"; //进料结束系统判断
+
+    public static final String UNLOAD_SEQ = "UNLOAD_SEQ"; //卸料次序
 }
