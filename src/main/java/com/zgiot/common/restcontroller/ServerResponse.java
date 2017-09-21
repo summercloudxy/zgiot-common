@@ -4,17 +4,17 @@ import com.alibaba.fastjson.JSON;
 import com.zgiot.common.exceptions.SysException;
 
 public class ServerResponse<T> {
-    private String message;
+    private String errorMsg;
     private Integer code;
-    private T data;
+    private T obj;
 
     public ServerResponse() {
     }
 
-    public ServerResponse(String message, Integer errorCode, T data) {
-        this.message = message;
+    public ServerResponse(String errorMsg, Integer errorCode, T obj) {
+        this.errorMsg = errorMsg;
         this.code = errorCode;
-        this.data = data;
+        this.obj = obj;
     }
 
     public static ServerResponse buildFromException(SysException e) {
@@ -33,12 +33,12 @@ public class ServerResponse<T> {
         return JSON.toJSONString(buildOK(data));
     }
 
-    public String getMessage() {
-        return message;
+    public String getErrorMsg() {
+        return errorMsg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
     }
 
     public Integer getCode() {
@@ -49,20 +49,20 @@ public class ServerResponse<T> {
         this.code = code;
     }
 
-    public T getData() {
-        return data;
+    public T getObj() {
+        return obj;
     }
 
-    public void setData(T data) {
-        this.data = data;
+    public void setObj(T obj) {
+        this.obj = obj;
     }
 
     @Override
     public String toString() {
         return "ServerResponse{" +
-                "message='" + message + '\'' +
+                "errorMsg='" + errorMsg + '\'' +
                 ", code=" + code +
-                ", data=" + data +
+                ", obj=" + obj +
                 '}';
     }
 }
