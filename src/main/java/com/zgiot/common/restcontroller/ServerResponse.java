@@ -8,6 +8,9 @@ public class ServerResponse<T> {
     private Integer code;
     private T data;
 
+    public ServerResponse() {
+    }
+
     public ServerResponse(String message, Integer errorCode, T data) {
         this.message = message;
         this.code = errorCode;
