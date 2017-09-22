@@ -12,6 +12,7 @@ public @interface KepServerMapping {
     String DATATYPE_BOOL="BOOL";
     String DATATYPE_INT="INT";
     String DATATYPE_DINT="DINT";
+    String DATATYPE_SHORT="SHORT";
     String READ_ONLY="R";
     String READ_WRITE="RW";
 
