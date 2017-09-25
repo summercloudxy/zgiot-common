@@ -9,31 +9,6 @@ public class ThingModel implements Serializable, Cloneable {
 
     public static final String TYPE_DEVICE = "D";
 
-    /**
-     *  /thing/{thingCode}接口返回json值的name属性名
-     */
-    public static final String THING_NAME = "name";
-
-    /**
-     *  /thing/{thingCode}接口返回json值的shortName属性名
-     */
-    public static final String THING_SHORT_NAME = "shortName";
-
-    /**
-     *  /thing/{thingCode}接口返回json值的base属性名
-     */
-    public static final String BASE = "base";
-
-    /**
-     *  /thing/{thingCode}接口返回json值的prop属性名
-     */
-    public static final String PROP = "prop";
-
-    /**
-     *  /thing/{thingCode}接口返回json值的disProp属性名
-     */
-    public static final String DIS_PROP= "disProp";
-
     private int id;
     private int parentThingId;
     private String thingCode;

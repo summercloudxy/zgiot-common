@@ -1,8 +1,8 @@
 package com.zgiot.common.pojo;
 
 public class ThingPropertyModel {
-    public static final String PROP_TYPE_BASE = "BASE";
-    public static final String PROP_TYPE_DISP = "DISP";
+    public static final String PROP_TYPE_PROP = "PROP";
+    public static final String PROP_TYPE_DISP_PROP = "DISP_PROP";
     private String thingCode;
     private String propType;
     private String propKey;
