@@ -14,9 +14,18 @@ public class ThingModel implements Serializable, Cloneable {
     private String thingCode;
     private String thingCategoryCode;
     private String thingName;
+    private String thingShortName;
     private String thingType1Code;
     private String thingType2Code;
     private String thingType3Code;
+
+    public String getShortName() {
+        return thingShortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.thingShortName = shortName;
+    }
 
     public int getId() {
         return id;
@@ -90,6 +99,7 @@ public class ThingModel implements Serializable, Cloneable {
                 ", thingCode='" + thingCode + '\'' +
                 ", thingCategoryCode='" + thingCategoryCode + '\'' +
                 ", thingName='" + thingName + '\'' +
+                ", shortName='" + thingName + '\'' +
                 ", thingType1Code='" + thingType1Code + '\'' +
                 ", thingType2Code='" + thingType2Code + '\'' +
                 ", thingType3Code='" + thingType3Code + '\'' +
