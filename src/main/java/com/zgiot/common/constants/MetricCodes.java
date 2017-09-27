@@ -12,5 +12,7 @@ public class MetricCodes {
     public static final String ASSAY_MT ="MT"; // 水分
     public static final String ASSAY_STAD ="STAD"; // 硫分
     public static final String ASSAY_QNETAR ="QNETAR"; // 发热量
+    
+    public static final String STATE = "STATE"; //状态
 
 }

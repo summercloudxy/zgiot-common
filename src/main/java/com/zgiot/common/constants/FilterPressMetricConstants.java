@@ -11,8 +11,6 @@ import static com.zgiot.common.annotation.KepServerMapping.*;
 @Component
 public class FilterPressMetricConstants {
 
-    public static final String STATE = "STATE"; //状态
-
     @KepServerMapping(dataType = DATATYPE_SHORT, rwType = READ_ONLY, position = "40001")
     public static final String STAGE = "STAGE"; //压滤机阶段
 
