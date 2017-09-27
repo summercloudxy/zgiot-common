@@ -23,6 +23,8 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(name = "v")
     private String value;
 
+    private String preValue; // 上次值的缓存
+
     private Object valueObj;
 
     // 值产生的时间戳
@@ -40,6 +42,14 @@ public class DataModel implements Serializable, Cloneable {
     }
 
     public DataModel() {
+    }
+
+    public String getPreValue() {
+        return preValue;
+    }
+
+    public void setPreValue(String preValue) {
+        this.preValue = preValue;
     }
 
     @Override
