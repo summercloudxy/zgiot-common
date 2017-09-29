@@ -32,4 +32,8 @@ public final class DataModelWrapper {
     public Date getDataTimeStamp() {
         return dataModel.getDataTimeStamp();
     }
+
+    public String getPreValue() {
+        return dataModel.getPreValue();
+    }
 }

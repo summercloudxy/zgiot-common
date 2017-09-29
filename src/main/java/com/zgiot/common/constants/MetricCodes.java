@@ -13,4 +13,7 @@ public class MetricCodes {
     public static final String ASSAY_STAD ="STAD"; // 硫分
     public static final String ASSAY_QNETAR ="QNETAR"; // 发热量
 
+    public static final String STATE = "STATE"; //设备状态
+    public static final String RESET = "RESET"; //复位
+
 }
