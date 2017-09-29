@@ -50,7 +50,7 @@ public class FilterPressMetricConstants {
     public static final String AUTO = "AUTO"; //手动/自动
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40005.4")
-    public static final String LOCAL_RO = "LOCAL_RO"; //远程就地按钮
+    public static final String LOCAL = "LOCAL"; //远程就地按钮
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.5")
     public static final String PRESS_ULMT = "PRESS_ULMT"; //压紧上限
