@@ -62,8 +62,7 @@ public class DataModel implements Serializable, Cloneable {
     }
 
     /**
-     *
-     * @param valueType  to get metric first, then get value type from metric
+     * @param valueType to get metric first, then get value type from metric
      */
     public void initValueByType(String valueType) {
         if (this.valueObj == null) {
@@ -150,8 +149,8 @@ public class DataModel implements Serializable, Cloneable {
                 ", mcc='" + metricCategoryCode + '\'' +
                 ", mc='" + metricCode + '\'' +
                 ", value=" + value +
-                ", date=" + sdf.format(dataTimeStamp) +
-                ", ts=" + dataTimeStamp.getTime() +
+                ", date=" + (dataTimeStamp == null ? "" : sdf.format(dataTimeStamp)) +
+                ", ts=" + (dataTimeStamp == null ? "" : dataTimeStamp.getTime()) +
                 '}';
     }
 }
