@@ -29,6 +29,13 @@ public class ServerResponse<T> {
         );
     }
 
+    public static String buildJson(String message, int code, Object data) {
+        return JSON.toJSONString(new ServerResponse(
+                message
+                , code, data
+        ));
+    }
+
     public static String buildOkJson(Object data) {
         return JSON.toJSONString(buildOK(data));
     }
