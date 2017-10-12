@@ -420,4 +420,6 @@ public class FilterPressMetricConstants {
     public static final String PLATE_CNT = "PLATE_CNT"; //压滤机当前板数
 
     public static final String PLATE_TTL = "PLATE_TTL"; //压滤机总板数
+
+    public static String FEED_PUMP_CURRENT = "CURRENT";//压滤机入料泵电流
 }
