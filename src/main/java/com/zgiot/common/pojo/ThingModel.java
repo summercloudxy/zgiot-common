@@ -3,16 +3,12 @@ package com.zgiot.common.pojo;
 import java.io.Serializable;
 
 public class ThingModel implements Serializable, Cloneable {
-    public static final String CATEGORY_DEVICE = "DVC";
-    public static final String CATEGORY_SYSTEM = "SYS";
-    public static final String CATEGORY_ERROR = "ERR";
 
     public static final String TYPE_DEVICE = "D";
 
     private int id;
     private int parentThingId;
     private String thingCode;
-    private String thingCategoryCode;
     private String thingName;
     private String thingShortName;
     private String thingType1Code;
@@ -49,14 +45,6 @@ public class ThingModel implements Serializable, Cloneable {
 
     public void setThingCode(String thingCode) {
         this.thingCode = thingCode;
-    }
-
-    public String getThingCategoryCode() {
-        return thingCategoryCode;
-    }
-
-    public void setThingCategoryCode(String thingCategoryCode) {
-        this.thingCategoryCode = thingCategoryCode;
     }
 
     public String getThingName() {
@@ -97,7 +85,6 @@ public class ThingModel implements Serializable, Cloneable {
                 "id=" + id +
                 ", parentThingId=" + parentThingId +
                 ", thingCode='" + thingCode + '\'' +
-                ", thingCategoryCode='" + thingCategoryCode + '\'' +
                 ", thingName='" + thingName + '\'' +
                 ", shortName='" + thingName + '\'' +
                 ", thingType1Code='" + thingType1Code + '\'' +

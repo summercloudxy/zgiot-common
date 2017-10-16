@@ -8,8 +8,8 @@ import java.util.Date;
 
 public class DataModel implements Serializable, Cloneable {
     // 物体分类code
-    @JSONField(name = "tcc")
-    private String thingCategoryCode;
+    @JSONField(name = "mdt")
+    private String metricDataType;
     // 物体code
     @JSONField(name = "tc")
     private String thingCode;
@@ -31,9 +31,9 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(name = "dt")
     private Date dataTimeStamp;
 
-    public DataModel(String thingCategoryCode, String thingCode, String metricCategoryCode
+    public DataModel(String metricDataType, String thingCode, String metricCategoryCode
             , String metricCode, String value, Date dataTimeStamp) {
-        this.thingCategoryCode = thingCategoryCode;
+        this.metricDataType = metricDataType;
         this.thingCode = thingCode;
         this.metricCategoryCode = metricCategoryCode;
         this.metricCode = metricCode;
@@ -70,12 +70,12 @@ public class DataModel implements Serializable, Cloneable {
         }
     }
 
-    public String getThingCategoryCode() {
-        return thingCategoryCode;
+    public String getMetricDataType() {
+        return metricDataType;
     }
 
-    public void setThingCategoryCode(String thingCategoryCode) {
-        this.thingCategoryCode = thingCategoryCode;
+    public void setMetricDataType(String metricDataType) {
+        this.metricDataType = metricDataType;
     }
 
     public String getThingCode() {
@@ -144,10 +144,10 @@ public class DataModel implements Serializable, Cloneable {
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return "DataModel{" +
-                "tcc='" + thingCategoryCode + '\'' +
-                ", tc='" + thingCode + '\'' +
-                ", mcc='" + metricCategoryCode + '\'' +
-                ", mc='" + metricCode + '\'' +
+                "mdt='" + metricDataType  +
+                ", tc='" + thingCode  +
+                ", mcc='" + metricCategoryCode  +
+                ", mc='" + metricCode  +
                 ", value=" + value +
                 ", date=" + (dataTimeStamp == null ? "" : sdf.format(dataTimeStamp)) +
                 ", ts=" + (dataTimeStamp == null ? "" : dataTimeStamp.getTime()) +
