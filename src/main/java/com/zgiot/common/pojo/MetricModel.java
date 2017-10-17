@@ -6,7 +6,7 @@ public class MetricModel implements Serializable, Cloneable {
     public static final String CATEGORY_SIGNAL = "SIG"; // 信号 signal
     public static final String CATEGORY_ASSAY = "ASSAY"; // 化验数据
 
-    public static final String VALUE_TYPE_SHORT = "INT"; // 0,1 不足描述的状态
+    public static final String VALUE_TYPE_SHORT = "SHT";
     public static final String VALUE_TYPE_FLOAT = "FLT";
     public static final String VALUE_TYPE_BOOL = "BOO";
 
