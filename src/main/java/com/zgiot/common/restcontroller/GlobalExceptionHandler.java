@@ -24,7 +24,7 @@ public class GlobalExceptionHandler {
     public ServerResponse processException(HttpServletRequest req, Throwable e) {
         String reqIdStr = getReqId(req);
         logger.warn("Request '" + reqIdStr + "' failed: ");
-        return new ServerResponse(e.getMessage(), SysException.EC_UNKOWN, null);
+        return new ServerResponse(e.getMessage(), SysException.EC_UNKNOWN, null);
     }
 
     private String getReqId(HttpServletRequest req) {

@@ -11,6 +11,7 @@ public class AlertConstants {
     public static final String STAGE_REPAIRING = "REPAIRING"; // 维修中
     public static final String STAGE_REPAIRED = "REPAIRED"; // 维修结束
     public static final String STAGE_RELEASE = "RELEASE"; // 报警解除
+    public static final String STAGE_UNRELEASE = "UNRELEASE"; //所有未解除阶段
 
     public static final short TYPE_FAULT = 0; // 故障类报警
     public static final short TYPE_PARAM = 1; // 参数类报警
@@ -50,6 +51,12 @@ public class AlertConstants {
     public static final short MESSAGE_REQ_RESET = 14; //申请复位（岗位）
     public static final short MESSAGE_RESET = 15; //复位（调度）
     public static final short MESSAGE_TYPE_REQ_FEEDBACK = 16; //请求反馈
+
+    public static final String PERMISSION_POSTWORKER = "alarm:staff"; //岗位工权限
+    public static final String PERMISSION_DISPATCHER = "alarm:dispatch"; //调度权限
+
+    public static final int FEEDBACK_TYPE_IMAGE = 0;
+    public static final int FEEDBACK_TYPE_VIDEO = 1;
 
 
 }
