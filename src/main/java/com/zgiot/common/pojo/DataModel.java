@@ -140,6 +140,10 @@ public class DataModel implements Serializable, Cloneable {
         return valueObj;
     }
 
+    public void setValueObj(Object valueObj) {
+        this.valueObj = valueObj;
+    }
+
     @Override
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
