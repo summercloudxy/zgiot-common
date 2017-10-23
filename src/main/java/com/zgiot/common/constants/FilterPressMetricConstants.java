@@ -414,7 +414,7 @@ public class FilterPressMetricConstants {
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.9")
-    public static final String RO_LOOSEN = "RO_LOOSEN"; //压滤阶段-松开
+    public static final String RO_LOOSE= "RO_LOOSE"; //压滤阶段-松开
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.10")
     public static final String RO_TAKEN = "RO_TAKEN"; //压滤阶段-取板
@@ -428,7 +428,7 @@ public class FilterPressMetricConstants {
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.15")
     public static final String RO_FEEDING = "RO_FEEDING"; //压滤阶段-进料
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.0")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.0")
     public static final String RO_FEED_OVER = "RO_FEED_OVER"; //压滤阶段-进料结束
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.4")
