@@ -417,7 +417,7 @@ public class FilterPressMetricConstants {
     public static final String RO_LOOSE= "RO_LOOSE"; //压滤阶段-松开
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.10")
-    public static final String RO_TAKEN = "RO_TAKEN"; //压滤阶段-取板
+    public static final String RO_TAKE = "RO_TAKE"; //压滤阶段-取板
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.11")
     public static final String RO_PULL = "RO_PULL"; //压滤阶段-拉板
