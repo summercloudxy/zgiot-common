@@ -413,40 +413,40 @@ public class FilterPressMetricConstants {
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_WRITE, position = "40049.7")
     public static final String T3_CHOOSE = "T3_CHOOSE"; //三队选择
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.9")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.9")
     public static final String RO_LOOSEN = "RO_LOOSEN"; //压滤阶段-松开
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.10")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.10")
     public static final String RO_TAKEN = "RO_TAKEN"; //压滤阶段-取板
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.11")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.11")
     public static final String RO_PULL = "RO_PULL"; //压滤阶段-拉板
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.13")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.13")
     public static final String RO_PRESS = "RO_PRESS"; //压滤阶段-压紧
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.15")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.15")
     public static final String RO_FEEDING = "RO_FEEDING"; //压滤阶段-进料
 
     @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.0")
     public static final String RO_FEED_OVER = "RO_FEED_OVER"; //压滤阶段-进料结束
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.4")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.4")
     public static final String RO_BLOW = "RO_BLOW"; //压滤阶段-吹风
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.3")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.3")
     public static final String RO_EMPTYING = "RO_EMPTYING"; //压滤阶段-放空
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.1")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.1")
     public static final String RO_SQUEEZE = "RO_SQUEEZE"; //压滤阶段-压榨
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.2")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.2")
     public static final String RO_SQUEEZE_OVER = "RO_SQUEEZE_OVER"; //压滤阶段-压榨延时
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.14")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.14")
     public static final String RO_HOLD_PRESS = "RO_HOLD_PRESS"; //压滤阶段-保压
 
-    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40002.5")
+    @KepServerMapping(dataType = DATATYPE_BOOL, rwType = READ_ONLY, position = "40001.5")
     public static final String RO_CYCLE = "RO_CYCLE"; //压滤阶段-循环等待
 
     public static final String FEED_ASUM = "FEED_ASUM"; //进料结束系统判断
