@@ -11,8 +11,8 @@ public final class DataModelWrapper {
         this.dataModel = dataModel;
     }
     @JSONField(serialize = false)
-    public String getThingCategory() {
-        return dataModel.getThingCategoryCode();
+    public String getMetricDataType() {
+        return dataModel.getMetricDataType();
     }
     @JSONField(name = "tc")
     public String getThingCode() {
