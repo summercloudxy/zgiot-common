@@ -1,7 +1,7 @@
 package com.zgiot.common.exceptions;
 
 public class SysException extends RuntimeException{
-    public static final int EC_UNKOWN = -1 ; // EC = Error Code
+    public static final int EC_UNKNOWN = -1 ; // EC = Error Code
     public static final int EC_SUCCESS = 0 ;
     public static final int EC_CMD_FAILED = -2;
     public static final int EC_CMD_PULSE_FIRST_FAILED = -3;
