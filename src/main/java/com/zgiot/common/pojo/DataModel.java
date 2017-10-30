@@ -7,20 +7,28 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DataModel implements Serializable, Cloneable {
+
+    public static final String METRIC_DATA_TYPE = "mdt";
+    public static final String THING_CODE = "tc";
+    public static final String METRIC_CATEGORY_CODE = "mcc";
+    public static final String METRIC_CODE = "mc";
+    public static final String VALUE = "v";
+    public static final String DATA_TIMESTAMP = "dt";
+
     // 物体分类code
-    @JSONField(name = "mdt")
+    @JSONField(name = METRIC_DATA_TYPE)
     private String metricDataType;
     // 物体code
-    @JSONField(name = "tc")
+    @JSONField(name = THING_CODE)
     private String thingCode;
     // 指标分类code
-    @JSONField(name = "mcc")
+    @JSONField(name = METRIC_CATEGORY_CODE)
     private String metricCategoryCode;
     // 指标code
-    @JSONField(name = "mc")
+    @JSONField(name = METRIC_CODE)
     private String metricCode;
     // 值
-    @JSONField(name = "v")
+    @JSONField(name = VALUE)
     private String value;
 
     private String preValue; // 上次值的缓存
@@ -28,7 +36,7 @@ public class DataModel implements Serializable, Cloneable {
     private Object valueObj;
 
     // 值产生的时间戳
-    @JSONField(name = "dt")
+    @JSONField(name = DATA_TIMESTAMP)
     private Date dataTimeStamp;
 
     public DataModel(String metricDataType, String thingCode, String metricCategoryCode
