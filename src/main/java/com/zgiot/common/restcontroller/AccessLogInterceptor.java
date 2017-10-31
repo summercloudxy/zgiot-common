@@ -18,7 +18,7 @@ public class AccessLogInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest req, HttpServletResponse res, Object o) throws Exception {
 
-        if (logger.isInfoEnabled()){
+        if (logger.isDebugEnabled()){
             Map map = new LinkedHashMap<>();
             map.put("reqId", req.getHeader(GlobalConstants.REQUEST_ID_HEADER_KEY));
             map.put("from", req.getRemoteHost()+":"+req.getRemotePort());
@@ -28,7 +28,7 @@ public class AccessLogInterceptor implements HandlerInterceptor {
             map.put("len", req.getContentLengthLong());
 
             req.setAttribute(START_FLAG, System.currentTimeMillis());
-            logger.info("Got Request: `{}`", JSON.toJSONString(map));
+            logger.debug("Got Request: `{}`", JSON.toJSONString(map));
         }
 
         return true;
@@ -36,11 +36,11 @@ public class AccessLogInterceptor implements HandlerInterceptor {
 
     @Override
     public void postHandle(HttpServletRequest req, HttpServletResponse httpServletResponse, Object o, ModelAndView modelAndView) throws Exception {
-        if (logger.isInfoEnabled()){
+        if (logger.isDebugEnabled()){
             String reqId = req.getHeader(GlobalConstants.REQUEST_ID_HEADER_KEY);
             long start = (long) req.getAttribute(START_FLAG);
             long ds = System.currentTimeMillis() - start;
-            logger.info("End Request: reqId=`{}`, dMs=`{}`", reqId, ds);
+            logger.debug("End Request: reqId=`{}`, dMs=`{}`", reqId, ds);
         }
     }
 
