@@ -156,13 +156,13 @@ public class DataModel implements Serializable, Cloneable {
     public String toString() {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         return "DataModel{" +
-                "mdt='" + metricDataType  +
-                ", tc='" + thingCode  +
-                ", mcc='" + metricCategoryCode  +
-                ", mc='" + metricCode  +
-                ", value=" + value +
-                ", date=" + (dataTimeStamp == null ? "" : sdf.format(dataTimeStamp)) +
-                ", ts=" + (dataTimeStamp == null ? "" : dataTimeStamp.getTime()) +
-                '}';
+                "mdt=`" + metricDataType  +
+                "`, tc=`" + thingCode  +
+                "`, mcc=`" + metricCategoryCode  +
+                "`, mc=`" + metricCode  +
+                "`, value=`" + value +
+                "`, date=`" + (dataTimeStamp == null ? "" : sdf.format(dataTimeStamp)) +
+                "`, ts=`" + (dataTimeStamp == null ? "" : dataTimeStamp.getTime()) +
+                "`}";
     }
 }
