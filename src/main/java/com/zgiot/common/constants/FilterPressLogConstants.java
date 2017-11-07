@@ -1,10 +1,10 @@
 package com.zgiot.common.constants;
 
 public class FilterPressLogConstants {
-    public static final String FEED_INTELLIGENT = "智能";
-    public static final String FEED_AUTO = "手动";
-    public static final String UNLOAD_INTELLIGENT = "智能";
-    public static final String UNLOAD_AUTO = "手动";
+    public static final boolean FEED_INTELLIGENT = Boolean.TRUE;
+    public static final boolean FEED_AUTO = Boolean.FALSE;
+    public static final boolean UNLOAD_INTELLIGENT = Boolean.TRUE;
+    public static final boolean UNLOAD_AUTO = Boolean.FALSE;
     public static final int DAY_SHIFT_START_TIME_SCOPE = 8;
     public static final int DAY_SHIFT_END_TIME_SCOPE = 20;
     public static final boolean IS_DAY_SHIFT_OK = true;
