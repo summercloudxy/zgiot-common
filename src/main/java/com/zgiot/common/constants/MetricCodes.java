@@ -15,5 +15,7 @@ public class MetricCodes {
 
     public static final String STATE = "STATE"; //设备状态
     public static final String RESET = "FRESET"; //故障复位
+    public static final String ALERT_CONFIRM = "ACK"; //报警确认
+    public static final String WARNING = "WARNING"; //报警
 
 }
