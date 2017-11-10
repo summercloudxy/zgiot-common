@@ -22,7 +22,7 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(name = THING_CODE)
     private String thingCode;
     // 指标分类code
-    @JSONField(name = METRIC_CATEGORY_CODE)
+    @JSONField(name = METRIC_CATEGORY_CODE, serialize = false)
     private String metricCategoryCode;
     // 指标code
     @JSONField(name = METRIC_CODE)
@@ -31,8 +31,9 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(name = VALUE)
     private String value;
 
+    @JSONField(serialize = false)
     private String preValue; // 上次值的缓存
-
+    @JSONField(serialize = false)
     private Object valueObj;
 
     // 值产生的时间戳
