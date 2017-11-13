@@ -28,7 +28,7 @@ public class AlertConstants {
     public static final short IS_RECOVERY = 1; // 已恢复
     public static final short DIS_RECOVERY = 0; // 未恢复
 
-    public static final String REPORTER_SYSTEM = "SYSTEM"; // 报警发起人：系统
+    public static final String REPORTER_SYSTEM = "系统"; // 报警发起人：系统
 
     public static final short LEVEL_10 = 10;
     public static final short LEVEL_20 = 20;
