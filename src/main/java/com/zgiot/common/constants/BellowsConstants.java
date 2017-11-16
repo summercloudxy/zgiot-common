@@ -18,32 +18,20 @@ public class BellowsConstants {
      */
     public static final String TYPE_MANUAL = "MANUAL";
 
-    /**
-     * 运行状态
-     */
-    public static final String STATE_RUNNING = "RUNNING";
-    /**
-     * 卸载状态
-     */
-    public static final String STATE_UNLOAD = "UNLOAD";
-    /**
-     * 停止状态
-     */
-    public static final String STATE_STOPPED = "STOPPED";
 
 
     /**
      * 低压空压机压力正常
      */
-    public static final short PRESSURE_NORMAL = 1;
+    public static final Short PRESSURE_NORMAL = 1;
     /**
      * 低压空压机压力过高
      */
-    public static final short PRESSURE_HIGH = 2;
+    public static final Short PRESSURE_HIGH = 2;
     /**
      * 低压空压机压力过低
      */
-    public static final short PRESSURE_LOW = 0;
+    public static final Short PRESSURE_LOW = 0;
 
     /**
      * 低压空压机智能模式
