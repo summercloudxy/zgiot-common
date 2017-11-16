@@ -70,11 +70,4 @@ public class CompressorMetricConstants {
      */
     public static final String CONTROL = "CONTROL";
 
-    /**
-     * 低压空压机压力状态
-     */
-    public static final String PRESSURE_STATE = "CP_V";
-
-
-
 }
