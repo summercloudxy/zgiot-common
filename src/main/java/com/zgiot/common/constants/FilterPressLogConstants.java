@@ -13,12 +13,6 @@ public class FilterPressLogConstants {
     public static final int RATE_PLATE_COUNT = 24;
     public static final String CURRENT_DAY = "currentDay";
     public static final String NEXT_OR_PRIOR_DAY = "nextOrPriorDay";
-    public static final String FILTERPRESS_2492 = "2492";
-    public static final String FILTERPRESS_2493 = "2493";
-    public static final String FILTERPRESS_2494 = "2494";
-    public static final String FILTERPRESS_2495 = "2495";
-    public static final String FILTERPRESS_2496 = "2496";
-    public static final String FILTERPRESS_2496A = "2496A";
     public static final String FILTERPRESS_2492_RATE_TIME = " 00:00:00";
     public static final String NIGHT_SHIFT_LINE = " 07:59:59";
     public static final int FILTER_PRESS_TOTAL_COUNT = 6;
@@ -40,9 +34,6 @@ public class FilterPressLogConstants {
     public static final String DAY_SHIFT_END_LINE = " 20:00:00";
     public static final String NIGHT_SHIFT_MIDDLE_LINE = " 23:59:59";
     public static final String NIGHT_SHIFT_ZERO_LINE = " 00:00:00";
-    public static final int T1_CHOOSE = 0;
-    public static final int T2_CHOOSE = 1;
-    public static final int T3_CHOOSE = 2;
     public static final String RATED_START_TIME_DAY_OFFSET = "rated_start_time_day_offset";
     public static final String RATED_START_TIME_NIGHT_OFFSET = "rated_start_time_night_offset";
     public static final int CURRENT_DAY_OFFSET = 0;
