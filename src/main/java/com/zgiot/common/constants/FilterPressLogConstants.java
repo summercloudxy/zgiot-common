@@ -13,7 +13,7 @@ public class FilterPressLogConstants {
     public static final int RATE_PLATE_COUNT = 24;
     public static final String CURRENT_DAY = "currentDay";
     public static final String NEXT_OR_PRIOR_DAY = "nextOrPriorDay";
-    public static final String FILTERPRESS_2492_RATE_TIME = " 00:00:00";
+    public static final String START_TIME_EVERY_DAY = " 00:00:00";
     public static final String NIGHT_SHIFT_LINE = " 07:59:59";
     public static final int FILTER_PRESS_TOTAL_COUNT = 6;
     public static final int DAY_DEC_ONE = -1;
@@ -22,7 +22,6 @@ public class FilterPressLogConstants {
     public static final int ONE_TEAM_RESET = 1;
     public static final int TWO_TEAM_RESET = 2;
     public static final int THREE_TEAM_RESET = 3;
-    public static final String SIG = "SIG";
     public static final int T1_CLR_POSITION = 6;
     public static final int T2_CLR_POSITION = 7;
     public static final int T3_CLR_POSITION = 8;
