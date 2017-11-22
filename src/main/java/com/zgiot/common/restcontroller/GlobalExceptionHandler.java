@@ -16,14 +16,14 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = SysException.class)
     public ServerResponse processEdpException(HttpServletRequest req, SysException e) {
         String reqIdStr = getReqId(req);
-        logger.warn("Request '" + reqIdStr + "' failed: ");
+        logger.warn("Request '" + reqIdStr + "' throws sysexception: ", e);
         return ServerResponse.buildFromException(e);
     }
 
     @ExceptionHandler(value = Throwable.class)
     public ServerResponse processException(HttpServletRequest req, Throwable e) {
         String reqIdStr = getReqId(req);
-        logger.warn("Request '" + reqIdStr + "' failed: ");
+        logger.warn("Request '" + reqIdStr + "' throws throwable: ", e);
         return new ServerResponse(e.getMessage(), SysException.EC_UNKNOWN, null);
     }
 
