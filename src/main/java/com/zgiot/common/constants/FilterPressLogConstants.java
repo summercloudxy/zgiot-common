@@ -43,6 +43,13 @@ public class FilterPressLogConstants {
     public static final int TEAM1 = 1;
     public static final int TEAM2 = 2;
     public static final int TEAM3 = 3;
+    public static final String DAY_SHIFT = "isDayShift";
+    public static final String START_TIME = "startTime";
+    public static final String END_TIME = "endTime";
+    public static final String CURRENT_OR_PRIOR = "currentOrPrior";
+
+
+
 
 
 
