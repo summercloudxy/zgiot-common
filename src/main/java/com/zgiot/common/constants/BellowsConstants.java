@@ -150,4 +150,9 @@ public class BellowsConstants {
      * 智能鼓风阶段-鼓风阶段
      */
     public static final String BLOW_STAGE_RUN = "run";
+
+    /**
+     * 智能鼓风阶段-完成阶段
+     */
+    public static final String BLOW_STATE_FINISH = "finish";
 }
