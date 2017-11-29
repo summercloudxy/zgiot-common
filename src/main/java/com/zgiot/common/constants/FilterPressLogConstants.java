@@ -37,9 +37,6 @@ public class FilterPressLogConstants {
     public static final String RATED_START_TIME_NIGHT_OFFSET = "rated_start_time_night_offset";
     public static final int CURRENT_DAY_OFFSET = 0;
     public static final int HIS_PLATE_COUNT_DAY = 7;
-    public static final int T1_CHOOSE_VALUE = 32;
-    public static final int T2_CHOOSE_VALUE = 64;
-    public static final int T3_CHOOSE_VALUE = 128;
     public static final int TEAM1 = 1;
     public static final int TEAM2 = 2;
     public static final int TEAM3 = 3;
