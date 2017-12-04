@@ -57,6 +57,36 @@ public class BellowsConstants {
      */
     public static final String CP_INTELLIGENT = "CP_INTELLIGENT";
 
+    /**
+     * 空压机状态-加载
+     */
+    public static final String CP_STATE_LOAD = "LOAD";
+
+    /**
+     * 空压机状态-卸载
+     */
+    public static final String CP_STATE_UNLOAD = "UNLOAD";
+
+    /**
+     * 空压机状态-停止
+     */
+    public static final String CP_STATE_STOPPED = "STOPPED";
+
+    /**
+     * 空压机状态-故障加载
+     */
+    public static final String CP_STATE_ERROR_LOAD = "ERROR_LOAD";
+
+    /**
+     * 空压机状态-故障卸载
+     */
+    public static final String CP_STATE_ERROR_UNLOAD = "ERROR_UNLOAD";
+
+    /**
+     * 空压机状态-故障停止
+     */
+    public static final String CP_STATE_ERROR_STOPPED = "ERROR_STOPPED";
+
 
     /**
      * 管道压力
