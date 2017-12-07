@@ -30,7 +30,9 @@ public class FilterPressLogConstants {
     public static final int T3_CHOOSE_POSITION = 8;
     public static final int TEAM_CHOOSE_CLEAN_PERIOD = 1500;
     public static final String DAY_SHIFT_START_LINE = " 08:00:00";
+    public static final String PRIOR_TEAM_DAY_SHIFT_START_LINE = " 09:00:00";
     public static final String DAY_SHIFT_END_LINE = " 20:00:00";
+    public static final String PRIOR_TEAM_DAY_SHIFT_END_LINE = " 21:00:00";
     public static final String NIGHT_SHIFT_MIDDLE_LINE = " 23:59:59";
     public static final String NIGHT_SHIFT_ZERO_LINE = " 00:00:00";
     public static final String RATED_START_TIME_DAY_OFFSET = "rated_start_time_day_offset";
