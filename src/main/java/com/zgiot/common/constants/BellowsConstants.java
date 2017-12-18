@@ -58,6 +58,11 @@ public class BellowsConstants {
     public static final String CP_INTELLIGENT = "CP_INTELLIGENT";
 
     /**
+     * 低压空压机卸载-停止时间
+     */
+    public static final String CP_STOP_WAIT_TIME = "CP_STOP";
+
+    /**
      * 空压机状态-加载
      */
     public static final String CP_STATE_LOAD = "LOAD";
