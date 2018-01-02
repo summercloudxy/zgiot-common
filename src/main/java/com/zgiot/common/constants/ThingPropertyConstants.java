@@ -73,5 +73,6 @@ public class ThingPropertyConstants {
     private static final String EXPLOSION_PROOF = "EXPL_PROOF"; // 防爆
     private static final String INSULATION_LEVEL = "JY_LEVEL"; // 绝缘等级
     private static final String WAREHOUSE_HEIGHT = "WARE_HEI"; // 仓高（m）
+    private static final String LENGTH_M = "LEN_M"; // 长度（m）
 
 }
