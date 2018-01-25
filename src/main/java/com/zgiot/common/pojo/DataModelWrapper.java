@@ -1,6 +1,7 @@
 package com.zgiot.common.pojo;
 
 import com.alibaba.fastjson.annotation.JSONField;
+import org.springframework.util.StringUtils;
 
 import java.util.Date;
 
@@ -37,5 +38,13 @@ public final class DataModelWrapper {
 
     public String getPreValue() {
         return dataModel.getPreValue();
+    }
+
+    public boolean isEmpty(){
+        if(dataModel == null){
+            return true ;
+        }else{
+            return StringUtils.isEmpty(dataModel.getThingCode());
+        }
     }
 }
