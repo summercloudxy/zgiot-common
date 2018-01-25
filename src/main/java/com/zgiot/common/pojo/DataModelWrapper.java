@@ -29,7 +29,11 @@ public final class DataModelWrapper {
     }
     @JSONField(name = "v")
     public String getValue() {
-        return dataModel.getValue();
+        if(dataModel != null){
+            return dataModel.getValue();
+        }else{
+           return null;
+        }
     }
     @JSONField(name = "dt")
     public Date getDataTimeStamp() {
