@@ -1,6 +1,7 @@
 package com.zgiot.common.pojo;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -8,26 +9,50 @@ import java.util.Objects;
  */
 public class CoalAnalysisRecord {
     private Integer id;
-
+    /**
+     * 样本
+     */
     private String sample;
-
+    /**
+     * 灰分
+     */
     private Double aad;
-
+    /**
+     * 水分
+     */
     private Double mt;
-
+    /**
+     * 硫份
+     */
     private Double stad;
-
+    /**
+     * 发热量
+     */
     private Double qnetar;
-
+    /**
+     * 化验时间
+     */
     private Date time;
-
+    /**
+     * 化验密度
+     */
     private String target;
-
+    /**
+     * 平均分选密度
+     */
     private Double avgDensity;
-
+    /**
+     * 平均顶水流量
+     */
     private Double avgFlow;
-
+    /**
+     * 系统  一期/二期
+     */
     private Integer system;
+    /**
+     * 具体密度与顶水流量信息
+     */
+    private List<DensityAndFlowInfo> densityAndFlowInfos;
 
     public String getSample() {
         return sample;
@@ -115,6 +140,14 @@ public class CoalAnalysisRecord {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public List<DensityAndFlowInfo> getDensityAndFlowInfos() {
+        return densityAndFlowInfos;
+    }
+
+    public void setDensityAndFlowInfos(List<DensityAndFlowInfo> densityAndFlowInfos) {
+        this.densityAndFlowInfos = densityAndFlowInfos;
     }
 
     @Override
