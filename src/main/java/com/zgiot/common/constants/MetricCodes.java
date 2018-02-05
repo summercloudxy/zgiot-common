@@ -38,4 +38,10 @@ public class MetricCodes {
     public static final String DENSITY_CONTROL_NOTIFY_HIGH_DENSTIY_ALERT = "DENSITY_CONTROL_ALERT"; //提示高密度高液位报警
     public static final String DENSTIY_CONTROL_NOTIFY_BACK_FLOW = "DENSTIY_CONTROL_BACKFLOW"; //提示回流
 
+    public static final String COAL_CAP = "COAL_CAP"; //瞬时带煤量
+    public static final String CT_C = "CT_C"; //班累计带煤量
+    public static final String CT_M = "CT_M"; //月累计带煤量
+    public static final String ASH = "ASH"; //在线测灰
+    public static final String FL = "FL"; //当前流量
+
 }
