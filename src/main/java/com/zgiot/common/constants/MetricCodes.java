@@ -43,7 +43,10 @@ public class MetricCodes {
 
     public static final String COAL_CAP = "COAL_CAP"; //瞬时带煤量
     public static final String CT_C = "CT_C"; //班累计带煤量
+    public static final String CT_D = "CT_D"; //日累计带煤量
     public static final String CT_M = "CT_M"; //月累计带煤量
+    public static final String CT_Y = "CT_Y"; //年累计带煤量
+    public static final String CT_T = "CT_T"; //总累计带煤量
     public static final String ASH = "ASH"; //在线测灰
     public static final String FL = "FL"; //当前流量
 
