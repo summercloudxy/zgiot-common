@@ -34,7 +34,7 @@ public class DataModel implements Serializable, Cloneable {
     @JSONField(serialize = false)
     private String preValue; // 上次值的缓存
     @JSONField(serialize = false)
-    private Object valueObj;
+    private transient Object valueObj;
 
     // 值产生的时间戳
     @JSONField(name = DATA_TIMESTAMP)
@@ -136,9 +136,9 @@ public class DataModel implements Serializable, Cloneable {
             case MetricModel.VALUE_TYPE_FLOAT:
                 return Float.valueOf(valueStr);
             // DINT is not used for sending cmd so far
+            default:
+                return valueStr;
         }
-
-        return valueStr;
     }
 
     public static String genKey(String thingCode, String metricCode) {

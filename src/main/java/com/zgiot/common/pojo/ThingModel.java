@@ -92,4 +92,9 @@ public class ThingModel implements Serializable, Cloneable {
                 ", thingType3Code='" + thingType3Code + '\'' +
                 '}';
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
