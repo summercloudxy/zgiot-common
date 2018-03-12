@@ -111,4 +111,9 @@ public class MetricModel implements Serializable, Cloneable {
                 ", valueUnit='" + valueUnit + '\'' +
                 '}';
     }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 }
