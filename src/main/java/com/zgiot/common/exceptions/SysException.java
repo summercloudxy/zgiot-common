@@ -25,7 +25,7 @@ public class SysException extends RuntimeException{
         return errorCode;
     }
 
-    public void setErrorCode(int errorCode) {
+    public void setErrorCode (int errorCode) {
         this.errorCode = errorCode;
     }
 
