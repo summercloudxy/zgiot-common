@@ -29,7 +29,7 @@ public class SubscriptionConstants {
 
     public static final String MOISTURE_CONTENT = "水分";
 
-    public static final String ASH_CONTENT_CLEANCOAL_SCOPE = "10.2-10.8";//精煤灰分范围
+    public static final String ASH_CONTENT_CLEAN_COAL_SCOPE = "10.2-10.8";//精煤灰分范围
     public static final String ASH_CONTENT_MIXED_COAL_SCOPE = "23.5-25";//混煤灰分范围
 
     public static final String SULFUR_CONTENT_SCOPE = "0.65-0.8";//硫分范围
@@ -58,4 +58,25 @@ public class SubscriptionConstants {
     public static final String CLEAN_COAL_551 = "551生产精煤";//化验数据表中的target
     public static final String MIXE_COAL_551 = "552生产洗混煤";//化验数据表中的target
 
+
+    public static final String SELECT_ONE = "1";//已选择
+
+    public static final String SELECT_ZERO = "0";//未选择
+
+    public static final String DATE_TYPE_HOUR = "1";//近一小时
+
+    public static final String DATE_TYPE_DAY = "2";//当天
+
+    public static final String DATE_TYPE_WEEK = "3";//近一周
+
+    public static final String DATE_TYPE_MONTH = "4";//近一个月
+
+    public static final String CHART_TYPE = "1";//图形
+    public static final String LIST_TYPE = "2";//列表
+
+    public static final String ASSAY_AAD_NAME = "灰分";
+
+    public static final String ASSAY_STAD_NAME = "硫分";
+
+    public static final String ASSAY_MT_NAME = "水分";
 }
