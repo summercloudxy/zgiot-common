@@ -58,5 +58,6 @@ public class AlertConstants {
     public static final int FEEDBACK_TYPE_IMAGE = 0;
     public static final int FEEDBACK_TYPE_VIDEO = 1;
 
-
+    private AlertConstants() {
+    }
 }

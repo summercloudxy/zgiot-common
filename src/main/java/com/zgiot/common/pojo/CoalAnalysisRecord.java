@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * 煤质化验记录
  */
-public class CoalAnalysisRecord {
+public class CoalAnalysisRecord implements ReportFormsRecord {
     private Integer id;
     /**
      * 样本
@@ -34,7 +34,7 @@ public class CoalAnalysisRecord {
      */
     private Date time;
     /**
-     * 化验密度
+     * 化验项目
      */
     private String target;
     /**
@@ -169,6 +169,5 @@ public class CoalAnalysisRecord {
 
         return Objects.hash(sample, aad, mt, stad, qnetar, time, target);
     }
-
 
 }

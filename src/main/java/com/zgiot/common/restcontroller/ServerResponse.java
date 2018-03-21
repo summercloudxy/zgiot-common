@@ -1,6 +1,7 @@
 package com.zgiot.common.restcontroller;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.zgiot.common.exceptions.SysException;
 
 public class ServerResponse<T> {
@@ -38,6 +39,10 @@ public class ServerResponse<T> {
 
     public static String buildOkJson(Object data) {
         return JSON.toJSONString(buildOK(data));
+    }
+
+    public static String buildOkJsonWithNullField(Object data){
+        return JSON.toJSONString(buildOK(data), SerializerFeature.WriteMapNullValue);
     }
 
     public String getErrorMsg() {

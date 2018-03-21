@@ -12,9 +12,38 @@ public class MetricCodes {
     public static final String ASSAY_MT = "MT"; // 水分
     public static final String ASSAY_STAD = "STAD"; // 硫分
     public static final String ASSAY_QNETAR = "QNETAR"; // 发热量
-    public static final String ASSAY_DENSITY = "ASSAY_DENSITY"; //密度
-    public static final String ASSAY_FLOW = "ASSAY_FLOW"; //流量
+    public static final String ASSAY_DENSITY = "ASSAY_DENSITY"; //煤质化验密度
+    public static final String ASSAY_FLOW = "ASSAY_FLOW"; //煤质化验流量
     public static final String ASSAY_SAMPLE = "ASSAY_SAMPLE"; //化验设备
+    public static final String ASSAY_DATA = "ASSAY_DATA"; //化验数据
+
+    public static final String ASSAY_AAD_AVG = "AAD_AVG"; // 班平均灰分
+    public static final String ASSAY_MT_AVG = "MT_AVG"; // 班平均水分
+    public static final String ASSAY_STAD_AVG = "STAD_AVG"; // 班平均硫分
+    public static final String ASSAY_QNETAR_AVG = "QNETAR_AVG"; // 班平均发热量
+    public static final String ASSAY_DENSITY_AVG = "ASSAY_DENSITY_AVG"; //班平均密度
+    public static final String ASSAY_FLOW_AVG = "ASSAY_FLOW_AVG"; //班平均流量
+
+    public static final String PRODUCT_INSPECT_POSITIVE1_POINT45 = "POSITIVE1_POINT45";
+    public static final String PRODUCT_INSPECT_NEGATIVE1_POINT45 = "NEGATIVE1_POINT45";
+    public static final String PRODUCT_INSPECT_POSITIVE1_POINT8 = "POSITIVE1_POINT8";
+    public static final String PRODUCT_INSPECT_NEGATIVE1_POINT8 = "NEGATIVE1_POINT8";
+    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8 = "ONE_POINT45_TO1_POINT8" ;
+    public static final String PRODUCT_INSPECT_POSITIVE50MM = "POSITIVE50MM";
+    public static final String PRODUCT_INSPECT_NEGATIVE50MM = "NEGATIVE50MM";
+    public static final String PRODUCT_INSPECT_DENSITY = "PRODUCT_INSPECT_DENSITY"; //生产检查密度
+
+    public static final String PRODUCT_INSPECT_POSITIVE1_POINT45_AVG = "POSITIVE1_POINT45_AVG";
+    public static final String PRODUCT_INSPECT_NEGATIVE1_POINT45_AVG = "NEGATIVE1_POINT45_AVG";
+    public static final String PRODUCT_INSPECT_POSITIVE1_POINT8_AVG = "POSITIVE1_POINT8_AVG";
+    public static final String PRODUCT_INSPECT_NEGATIVE1_POINT8_AVG = "NEGATIVE1_POINT8_AVG";
+    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8_AVG = "ONE_POINT45_TO1_POINT8_AVG" ;
+    public static final String PRODUCT_INSPECT_POSITIVE50MM_AVG = "POSITIVE50MM_AVG";
+    public static final String PRODUCT_INSPECT_NEGATIVE50MM_AVG = "NEGATIVE50MM_AVG";
+    public static final String PRODUCT_INSPECT_DENSITY_AVG = "PRODUCT_INSPECT_DENSITY_AVG"; //生产检查密度
+
+    public static final String PRODUCT_INSPECT_SAMPLE = "PRODUCT_INSPECT_SAMPLE"; //生产检查设备
+    public static final String PRODUCT_INSPECT_DATA = "PRODUCT_INSPECT_DATA"; //生产检查数据
 
     public static final String STATE = "STATE"; // 设备状态
     public static final String RESET = "FRESET"; // 故障复位
