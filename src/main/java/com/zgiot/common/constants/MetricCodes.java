@@ -49,17 +49,11 @@ public class MetricCodes {
     public static final String CT_T = "CT_T"; //总累计带煤量
     public static final String ASH = "ASH"; //在线测灰
     public static final String FL = "FL"; //当前流量
-    public static final String CURRENT = "CURRENT";//电流
-    public static final String PLATE_CNT = "PLATE_CNT";//压滤机当前板数
     public static final String RUN_STATE = "RUN_STATE";//运行状态
     public static final String LOAD_STAT = "LOAD_STAT";//加载状态
-    public static final String FAULT = "FAULT";//故障信号
-    public static final String PRESS_CUR = "PRESS_CUR";//当前压力
 
     public static final String COAL_8_DEVICE = "Coal_8_Device";//8#煤设备
     public static final String COAL_13_DEVICE = "Coal_13_Device";//13#煤设备
-
-
 
 
 }
