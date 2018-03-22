@@ -14,5 +14,11 @@ public class GlobalConstants {
     public static final String SYSTEM_TWO = "二期";
     public static final short STATE_BREAK = 20;//设备状态-断电
     public static final String SYSTEM_ONE = "一期";
+    //系统后缀
+    public static final String SYSTEM_01 = "01";
+    public static final String SYSTEM_02 = "02";
+
+
+
 }
 
