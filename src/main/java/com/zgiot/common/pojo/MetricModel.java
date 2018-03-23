@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class MetricModel implements Serializable, Cloneable {
     public static final String CATEGORY_SIGNAL = "SIG"; // 信号 signal
     public static final String CATEGORY_ASSAY = "ASSAY"; // 化验数据
+    public static final String CATEGORY_PRODUCTION_INSPECT = "PRODUCTION_INSPECT"; // 生产检查数据
 
     public static final String VALUE_TYPE_SHORT = "SHT";
     public static final String VALUE_TYPE_FLOAT = "FLT";
