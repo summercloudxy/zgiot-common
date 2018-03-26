@@ -21,6 +21,7 @@ public class SubscriptionConstants {
 
     public static final String FAULT = "故障";
     public static final String FAULT_1 = "1";
+    public static final String FAULT_0 = "0";
 
     public static final String ASH_CONTENT = "灰分";
 
@@ -57,6 +58,11 @@ public class SubscriptionConstants {
     public static final String CLEAN_COAL_551 = "551生产精煤";//化验数据表中的target
     public static final String MIXE_COAL_551 = "552生产洗混煤";//化验数据表中的target
 
+
+    public static final String SELECT_ONE = "1";//已选择
+
+    public static final String SELECT_ZERO = "0";//未选择
+
     public static final String DATE_TYPE_HOUR = "1";//近一小时
 
     public static final String DATE_TYPE_DAY = "2";//当天
@@ -73,6 +79,4 @@ public class SubscriptionConstants {
     public static final String ASSAY_STAD_NAME = "硫分";
 
     public static final String ASSAY_MT_NAME = "水分";
-
-
 }
