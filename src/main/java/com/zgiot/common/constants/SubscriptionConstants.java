@@ -56,7 +56,7 @@ public class SubscriptionConstants {
     public static final String WASTE_ROCK = "矸石";
 
     public static final String CLEAN_COAL_551 = "551生产精煤";//化验数据表中的target
-    public static final String MIXE_COAL_551 = "552生产洗混煤";//化验数据表中的target
+    public static final String MIXE_COAL_552 = "552生产洗混煤";//化验数据表中的target
 
 
     public static final String SELECT_ONE = "1";//已选择
