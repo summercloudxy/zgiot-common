@@ -8,7 +8,6 @@ package com.zgiot.common.constants;
 public class SubscriptionConstants {
 
 
-    public static final String RUN_STATE_START = "运行";
     public static final String RUN_STATE_STOP = "待机";
 
     public static final String RUN_STATE_START_1 = "1";
