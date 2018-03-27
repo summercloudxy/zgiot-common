@@ -76,7 +76,4 @@ public class SubscriptionConstants {
 
     public static final String ASSAY_AAD_NAME = "灰分";
 
-    public static final String ASSAY_STAD_NAME = "硫分";
-
-    public static final String ASSAY_MT_NAME = "水分";
 }
