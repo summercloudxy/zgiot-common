@@ -10,17 +10,16 @@ public class SubscriptionConstants {
 
     public static final String RUN_STATE_STOP = "待机";
 
-    public static final String RUN_STATE_START_1 = "1";
-    public static final String RUN_STATE_STOP_0 = "0";
+    public static final String RUN_STATE_START_1 = "true";
+    public static final String RUN_STATE_STOP_0 = "false";
 
     public static final String LOAD_STATE_LOAD = "加载";
     public static final String LOAD_STATE_UNLOAD = "卸载";
-    public static final String LOAD_STATE_LOAD_1 = "1";
-    public static final String LOAD_STATE_LOAD_0 = "0";
+    public static final String LOAD_STATE_LOAD_1 = "true";
+    public static final String LOAD_STATE_LOAD_0 = "false";
 
     public static final String FAULT = "故障";
-    public static final String FAULT_1 = "1";
-    public static final String FAULT_0 = "0";
+    public static final String FAULT_1 = "true";
 
     public static final String ASH_CONTENT = "灰分";
 
