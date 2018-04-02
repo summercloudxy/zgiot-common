@@ -8,20 +8,18 @@ package com.zgiot.common.constants;
 public class SubscriptionConstants {
 
 
-    public static final String RUN_STATE_START = "运行";
     public static final String RUN_STATE_STOP = "待机";
 
-    public static final String RUN_STATE_START_1 = "1";
-    public static final String RUN_STATE_STOP_0 = "0";
+    public static final String RUN_STATE_START_1 = "true";
+    public static final String RUN_STATE_STOP_0 = "false";
 
     public static final String LOAD_STATE_LOAD = "加载";
     public static final String LOAD_STATE_UNLOAD = "卸载";
-    public static final String LOAD_STATE_LOAD_1 = "1";
-    public static final String LOAD_STATE_LOAD_0 = "0";
+    public static final String LOAD_STATE_LOAD_1 = "true";
+    public static final String LOAD_STATE_LOAD_0 = "false";
 
     public static final String FAULT = "故障";
-    public static final String FAULT_1 = "1";
-    public static final String FAULT_0 = "0";
+    public static final String FAULT_1 = "true";
 
     public static final String ASH_CONTENT = "灰分";
 
@@ -56,7 +54,7 @@ public class SubscriptionConstants {
     public static final String WASTE_ROCK = "矸石";
 
     public static final String CLEAN_COAL_551 = "551生产精煤";//化验数据表中的target
-    public static final String MIXE_COAL_551 = "552生产洗混煤";//化验数据表中的target
+    public static final String MIXE_COAL_552 = "552生产洗混煤";//化验数据表中的target
 
 
     public static final String SELECT_ONE = "1";//已选择
@@ -76,7 +74,4 @@ public class SubscriptionConstants {
 
     public static final String ASSAY_AAD_NAME = "灰分";
 
-    public static final String ASSAY_STAD_NAME = "硫分";
-
-    public static final String ASSAY_MT_NAME = "水分";
 }
