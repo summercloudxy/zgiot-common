@@ -1,6 +1,7 @@
 package com.zgiot.common.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public interface ReportFormsRecord {
 
@@ -24,5 +25,8 @@ public interface ReportFormsRecord {
 
     void setId(Integer id);
 
+    void setDensityAndFlowInfos(List<DensityAndFlowInfo> densityAndFlowInfos);
+
+    List<DensityAndFlowInfo> getDensityAndFlowInfos();
 
 }
