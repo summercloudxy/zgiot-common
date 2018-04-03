@@ -7,6 +7,7 @@ public class SysException extends RuntimeException{
     public static final int EC_LOGIN_FAIL = -3;
     public static final int EC_CMD_PULSE_SECOND_FAILED = -4;
     public static final int EC_CMD_PULSE_FIRST_FAILED = -5;
+    public static final int EC_PARSE_FAILED = -6;
 
     private int errorCode;
     private Object data;
