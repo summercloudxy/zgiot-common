@@ -85,8 +85,8 @@ public class MetricCodes {
     public static final String FAULT = "FAULT";//故障信号
     public static final String PRESS_CUR = "PRESS_CUR";//当前压力
 
-    public static final String COAL_8_DEVICE = "Coal_8_Device";//8#煤设备
-    public static final String COAL_13_DEVICE = "Coal_13_Device";//13#煤设备
+    public static final String COAL_8_DEVICE = "COAL_8_DEVICE";//8#煤设备
+    public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
 
 
 
