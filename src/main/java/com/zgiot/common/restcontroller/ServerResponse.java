@@ -38,12 +38,14 @@ public class ServerResponse<T> {
     }
 
     public static String buildOkJson(Object data) {
-        return JSON.toJSONString(buildOK(data));
+        return JSON.toJSONString(buildOK(data), SerializerFeature.DisableCircularReferenceDetect);
     }
 
     public static String buildOkJsonWithNullField(Object data){
         return JSON.toJSONString(buildOK(data), SerializerFeature.WriteMapNullValue);
     }
+
+
 
     public String getErrorMsg() {
         return errorMsg;
