@@ -18,6 +18,8 @@ public class GlobalConstants {
     public static final String SYSTEM_01 = "01";
     public static final String SYSTEM_02 = "02";
 
+    public static final String USER_UUID_KEY = "userUuid";
+
 
 
 }
