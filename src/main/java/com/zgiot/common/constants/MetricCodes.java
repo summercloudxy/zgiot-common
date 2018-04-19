@@ -28,7 +28,7 @@ public class MetricCodes {
     public static final String PRODUCT_INSPECT_NEGATIVE1_POINT45 = "NEGATIVE1_POINT45";
     public static final String PRODUCT_INSPECT_POSITIVE1_POINT8 = "POSITIVE1_POINT8";
     public static final String PRODUCT_INSPECT_NEGATIVE1_POINT8 = "NEGATIVE1_POINT8";
-    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8 = "ONE_POINT45_TO1_POINT8" ;
+    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8 = "ONE_POINT45_TO1_POINT8";
     public static final String PRODUCT_INSPECT_POSITIVE50MM = "POSITIVE50MM";
     public static final String PRODUCT_INSPECT_NEGATIVE50MM = "NEGATIVE50MM";
     public static final String PRODUCT_INSPECT_DENSITY = "PRODUCT_INSPECT_DENSITY"; //生产检查密度
@@ -37,7 +37,7 @@ public class MetricCodes {
     public static final String PRODUCT_INSPECT_NEGATIVE1_POINT45_AVG = "NEGATIVE1_POINT45_AVG";
     public static final String PRODUCT_INSPECT_POSITIVE1_POINT8_AVG = "POSITIVE1_POINT8_AVG";
     public static final String PRODUCT_INSPECT_NEGATIVE1_POINT8_AVG = "NEGATIVE1_POINT8_AVG";
-    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8_AVG = "ONE_POINT45_TO1_POINT8_AVG" ;
+    public static final String PRODUCT_INSPECT_ONE_POINT45_TO1_POINT8_AVG = "ONE_POINT45_TO1_POINT8_AVG";
     public static final String PRODUCT_INSPECT_POSITIVE50MM_AVG = "POSITIVE50MM_AVG";
     public static final String PRODUCT_INSPECT_NEGATIVE50MM_AVG = "NEGATIVE50MM_AVG";
     public static final String PRODUCT_INSPECT_DENSITY_AVG = "PRODUCT_INSPECT_DENSITY_AVG"; //生产检查密度
@@ -81,14 +81,12 @@ public class MetricCodes {
     public static final String CURRENT = "CURRENT";//电流
     public static final String PLATE_CNT = "PLATE_CNT";//压滤机当前板数
     public static final String RUN_STATE = "RUN_STATE";//运行状态
-    public static final String LOAD_STAT = "LOAD_STAT";//加载状态
+    public static final String LOAD_STAT = "LOAD_STATE";//加载状态
     public static final String FAULT = "FAULT";//故障信号
     public static final String PRESS_CUR = "PRESS_CUR";//当前压力
 
     public static final String COAL_8_DEVICE = "COAL_8_DEVICE";//8#煤设备
     public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
-
-
 
 
 }
