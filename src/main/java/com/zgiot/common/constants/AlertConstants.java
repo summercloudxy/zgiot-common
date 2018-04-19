@@ -6,7 +6,7 @@ package com.zgiot.common.constants;
 public class AlertConstants {
     public static final String STAGE_NOT_VERIFY = "NOT_VERIFY"; // 未核实、已发起
     public static final String STAGE_VERIFIED = "VERIFIED"; // 已核实、已评级
-    public static final String STAGE_UNTREATED = "UNTREATED"; // 未处理
+    public static final String STAGE_UNHANDLED = "UNTREATED"; // 未处理
     public static final String STAGE_REQUEST_REPAIR = "REQUEST_REPAIR"; // 申请维修
     public static final String STAGE_REPAIRING = "REPAIRING"; // 维修中
     public static final String STAGE_REPAIRED = "REPAIRED"; // 维修结束
