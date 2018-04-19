@@ -18,7 +18,12 @@ public class GlobalConstants {
     public static final String SYSTEM_01 = "01";
     public static final String SYSTEM_02 = "02";
 
-    public static final String USER_UUID_KEY = "userUuid";
+    // 用户信息
+    public static final String USER_ID = "userId";
+    public static final String USER_UUID = "userUuid";
+    public static final String USER_LOGINNAME = "userLoginName";
+
+
 
 
 
