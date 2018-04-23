@@ -17,6 +17,7 @@ public class AlertConstants {
     public static final short TYPE_PARAM = 1; // 参数类报警
     public static final short TYPE_PROTECT = 2; // 保护类报警
     public static final short TYPE_USER = 3; // 人工类报警
+    public static final short TYPE_TARGET = 4; //指标类报警
 
     public static final short SOURCE_SYSTEM = 0; // 系统生成报警
     public static final short SOURCE_USER = 1; // 人工生成报警
