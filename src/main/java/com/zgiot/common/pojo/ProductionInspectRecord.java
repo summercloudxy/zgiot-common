@@ -195,7 +195,6 @@ public class ProductionInspectRecord implements ReportFormsRecord {
         this.avgFlow = avgFlow;
     }
 
-
     @Override
     public String toString() {
         return "ProductionInspectRecord{" +
