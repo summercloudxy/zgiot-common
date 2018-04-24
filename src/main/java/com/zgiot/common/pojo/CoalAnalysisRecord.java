@@ -170,4 +170,21 @@ public class CoalAnalysisRecord implements ReportFormsRecord {
         return Objects.hash(sample, aad, mt, stad, qnetar, time, target);
     }
 
+    @Override
+    public String toString() {
+        return "CoalAnalysisRecord{" +
+                "id=" + id +
+                ", sample='" + sample + '\'' +
+                ", aad=" + aad +
+                ", mt=" + mt +
+                ", stad=" + stad +
+                ", qnetar=" + qnetar +
+                ", time=" + time +
+                ", target='" + target + '\'' +
+                ", avgDensity=" + avgDensity +
+                ", avgFlow=" + avgFlow +
+                ", system=" + system +
+                ", densityAndFlowInfos=" + densityAndFlowInfos +
+                '}';
+    }
 }
