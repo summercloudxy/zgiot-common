@@ -88,5 +88,11 @@ public class MetricCodes {
     public static final String COAL_8_DEVICE = "COAL_8_DEVICE";//8#煤设备
     public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
 
+    public static final String TAP_CLOSE = "TAP_CLOSE";//关到位
+    public static final String TAP_OPEN = "TAP_OPEN";//开到位
+    public static final String MEDDLE = "Meddle";//人工干预
+
+    public static final String Parameter_Cond = "Parameter_Cond";//启动参数条件
+
 
 }
