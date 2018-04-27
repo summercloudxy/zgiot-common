@@ -194,4 +194,26 @@ public class ProductionInspectRecord implements ReportFormsRecord {
     public void setAvgFlow(Double avgFlow) {
         this.avgFlow = avgFlow;
     }
+
+
+    @Override
+    public String toString() {
+        return "ProductionInspectRecord{" +
+                "id=" + id +
+                ", sample='" + sample + '\'' +
+                ", positive1Point45=" + positive1Point45 +
+                ", negative1Point45=" + negative1Point45 +
+                ", positive1Point8=" + positive1Point8 +
+                ", negative1Point8=" + negative1Point8 +
+                ", onePoint45To1Point8=" + onePoint45To1Point8 +
+                ", positive50mm=" + positive50mm +
+                ", negative50mm=" + negative50mm +
+                ", time=" + time +
+                ", target='" + target + '\'' +
+                ", avgDensity=" + avgDensity +
+                ", avgFlow=" + avgFlow +
+                ", system=" + system +
+                ", densityAndFlowInfos=" + densityAndFlowInfos +
+                '}';
+    }
 }
