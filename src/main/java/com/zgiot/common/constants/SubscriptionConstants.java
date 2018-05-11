@@ -74,4 +74,29 @@ public class SubscriptionConstants {
 
     public static final String ASSAY_AAD_NAME = "灰分";
 
+    public static final String CLEAN_COAL_AVG_551 = "551生产精煤平均";//化验数据表中的target
+
+    public static final String MIXED_COAL_AVG_552 = "552生产洗混煤平均";//化验数据表中的target
+
+    public static final String WHITE_SHIFT = "白班";
+
+    public static final String NIGHT_SHIFT = "夜班";
+
+    public static final int WHITE_SHIFT_BEGIN = 8;
+    public static final int WHITE_SHIFT_END = 18;
+    public static final int NIGHT_SHIFT_BEGIN = 20;
+    public static final int NIGHT_SHIFT_END = 6;
+
+    public static final String WASH_RAW_COAL = "入洗原煤";//化验数据表中的target
+    public static final String FILTERPRESS_SLURRY = "压滤煤泥";//化验数据表中的target
+
+    public static final int SYSTEM_ONE = 1;
+    public static final int SYSTEM_TWO = 2;
+
+    public static final String TCS_ORE_FINE = "TCS精矿";//化验数据表中的target
+    public static final String TCS_ORE_CRUDE = "TCS尾矿";//化验数据表中的target
+
+    public static final String ORE_FINE = "精矿";
+    public static final String ORE_CRUDE = "尾矿";
+
 }
