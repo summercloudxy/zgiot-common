@@ -99,4 +99,13 @@ public class SubscriptionConstants {
     public static final String ORE_FINE = "精矿";
     public static final String ORE_CRUDE = "尾矿";
 
+    public static final String CLEAN_WAREHOUSE = "精煤仓";
+    public static final String MIXED_WAREHOUSE = "混煤仓";
+    public static final String COAL_8 = "8#煤";
+    public static final String COAL_13 = "13#煤";
+    public static final String SLURRY_WAREHOUSE = "库存煤泥";
+
+    public static final String TERM_ONE = "一期";
+    public static final String TERM_TWO = "二期";
+
 }

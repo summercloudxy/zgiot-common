@@ -88,5 +88,6 @@ public class MetricCodes {
     public static final String COAL_8_DEVICE = "COAL_8_DEVICE";//8#煤设备
     public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
 
+    public static final String AMOUNT = "AMOUNT";// 存储量(煤仓库存)
 
 }
