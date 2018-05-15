@@ -89,5 +89,43 @@ public class MetricCodes {
     public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
 
     public static final String AMOUNT = "AMOUNT";// 存储量(煤仓库存)
+    public static final String TAP_CLOSE = "TAP_CLOSE";//关到位
+    public static final String TAP_OPEN = "TAP_OPEN";//开到位
+    public static final String MEDDLE = "Meddle";//人工干预
+
+    public static final String Parameter_Cond = "Parameter_Cond";//启动参数条件
+
+
+    public static final String LOCAL = "LOCAL ";//就地切换按钮
+
+    public static final String LEVEL_LOCK = "LEVEL_LOCK ";//液位选择联锁
+
+    public static final String START_CMD = "START_CMD ";//集控启动
+
+    public static final String STOP_CMD = "STOP_CMD ";//集控停止
+
+    public static final String JJ_TIME = "JJ_TIME ";//已加介时间
+
+    public static final String JJ_RE_TIME = "JJ_RE_TIME ";//加介剩余时间
+
+    public static final String QUICKMIX = "QUICKMIX";//快速配介
+
+    public static final String JJ_ADD = "JJ_ADD";//合介桶加介
+
+    public static final String LE_PJ_SET = "LE_PJ_SET";//配介液位设定
+
+    public static final String LE_ZD_SET = "LE_ZD_SET";//最低液位设定
+
+    public static final String ADDING = "ADDING";//（合介桶）加介中
+
+    public static final String MIXING = "MIXING";//（合介桶）已触发加介，等待配介
+
+
+
+
+
+
+
+
 
 }
