@@ -459,9 +459,7 @@ public class FilterPressMetricConstants {
 
     public static String FEED_PUMP_CURRENT = "CURRENT";//压滤机入料泵电流
 
-    public static final String YL_LS_TERM1 = "YL_LS_TERM1"; //一期压滤连锁
-
-    public static final String YL_LS_TERM2 = "YL_LS_TERM2"; //二期压滤连锁
+    public static final String YL_LS = "YL_LS"; //连锁
 
     public static final String R_BAN_RUN = "R_BAN_RUN";
 
