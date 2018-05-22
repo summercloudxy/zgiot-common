@@ -458,4 +458,10 @@ public class FilterPressMetricConstants {
     public static final String PLATE_TTL = "PLATE_TTL"; //压滤机总板数
 
     public static String FEED_PUMP_CURRENT = "CURRENT";//压滤机入料泵电流
+
+    public static final String YL_LS = "YL_LS"; //连锁
+
+    public static final String R_BAN_RUN = "R_BAN_RUN";
+
+    public static final String STATE = "STATE";
 }
