@@ -117,4 +117,7 @@ public class MetricCodes {
     public static final String MEDIUM_COMPOUNDING_POOL = "MEDIUM_COMPOUNDING_POOL";//介质池配介
 
     public static final String MEDIUM_DOSING = "MEDIUM_DOSING";//合介桶加介
+
+    public static final String Parameter_Cond = "Parameter_Cond";
+
 }
