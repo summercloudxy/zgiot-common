@@ -41,10 +41,13 @@ public class ServerResponse<T> {
         return JSON.toJSONString(buildOK(data), SerializerFeature.DisableCircularReferenceDetect);
     }
 
-    public static String buildOkJsonWithNullField(Object data){
+    public static String buildOkJsonWithNullField(Object data) {
         return JSON.toJSONString(buildOK(data), SerializerFeature.WriteMapNullValue);
     }
 
+    public static String buildOkJsonWithNonStringKey(Object data) {
+        return JSON.toJSONString(buildOK(data), SerializerFeature.WriteNonStringKeyAsString);
+    }
 
 
     public String getErrorMsg() {
