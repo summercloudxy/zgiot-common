@@ -120,7 +120,7 @@ public class MetricCodes {
 
     public static final String MIXING = "MIXING";//（合介桶）已触发加介，等待配介
 
-
+    public static final String DSFL = "DSFL";//顶水流量
 
 
 
