@@ -88,5 +88,36 @@ public class MetricCodes {
     public static final String COAL_8_DEVICE = "COAL_8_DEVICE";//8#煤设备
     public static final String COAL_13_DEVICE = "COAL_13_DEVICE";//13#煤设备
 
+    public static final String AMOUNT = "AMOUNT";// 存储量(煤仓库存)
+
+    public static final String TAP_CLOSE = "TAP_CLOSE";//关到位
+    public static final String TAP_OPEN = "TAP_OPEN";//开到位
+    public static final String MEDDLE = "Meddle";//人工干预
+
+    public static final String PARAMETER_COND = "Parameter_Cond";//启动参数条件
+
+
+    public static final String POOL_STATE = "peijiestate";//介质池配介状态
+
+
+    public static final String INTELLIGENT = "intelligent";//智能模式
+
+    public static final String LOCAL = "LOCAL ";//就地切换
+
+    public static final String LEVEL_LOCK = "LEVEL_LOCK ";//液位选择联锁
+
+    public static final String START_CMD = "START_CMD ";//集控启动
+
+    public static final String STOP_CMD = "STOP_CMD ";//集控停止
+
+    public static final String MEDIUMDOSING_ELAPSEDTIME = "ELAPSED_TIME ";//已加介时间
+
+    public static final String MEDIUMDOSING_REMAININGTIME = "REMAINING_TIME ";//加介剩余时间
+
+    public static final String MEDIUM_COMPOUNDING_POOL = "MEDIUM_COMPOUNDING_POOL";//介质池配介
+
+    public static final String MEDIUM_DOSING = "MEDIUM_DOSING";//合介桶加介
+
+ 
 
 }
