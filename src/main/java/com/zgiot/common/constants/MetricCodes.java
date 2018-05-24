@@ -96,17 +96,17 @@ public class MetricCodes {
     public static final String PARAMETER_COND = "Parameter_Cond";//启动参数条件
 
 
-    public static final String LOCAL = "LOCAL ";//就地切换按钮
+    public static final String LOCAL = "LOCAL";//就地切换按钮
 
-    public static final String LEVEL_LOCK = "LEVEL_LOCK ";//液位选择联锁
+    public static final String LEVEL_LOCK = "LEVEL_LOCK";//液位选择联锁
 
-    public static final String START_CMD = "START_CMD ";//集控启动
+    public static final String START_CMD = "START_CMD";//集控启动
 
-    public static final String STOP_CMD = "STOP_CMD ";//集控停止
+    public static final String STOP_CMD = "STOP_CMD";//集控停止
 
-    public static final String JJ_TIME = "JJ_TIME ";//已加介时间
+    public static final String JJ_TIME = "JJ_TIME";//已加介时间
 
-    public static final String JJ_RE_TIME = "JJ_RE_TIME ";//加介剩余时间
+    public static final String JJ_RE_TIME = "JJ_RE_TIME";//加介剩余时间
 
     public static final String QUICKMIX = "QUICKMIX";//快速配介
 
