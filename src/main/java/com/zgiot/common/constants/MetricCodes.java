@@ -93,7 +93,7 @@ public class MetricCodes {
     public static final String TAP_OPEN = "TAP_OPEN";//开到位
     public static final String MEDDLE = "Meddle";//人工干预
 
-    public static final String Parameter_Cond = "Parameter_Cond";//启动参数条件
+    public static final String PARAMETER_COND = "Parameter_Cond";//启动参数条件
 
 
     public static final String LOCAL = "LOCAL ";//就地切换按钮
@@ -123,13 +123,7 @@ public class MetricCodes {
     public static final String DSFL = "DSFL";//顶水流量
 
 
-
-
-
-
-
     public static final String MEDIUM_DOSING = "MEDIUM_DOSING";//合介桶加介
 
- 
 
 }
