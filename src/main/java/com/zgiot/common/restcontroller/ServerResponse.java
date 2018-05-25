@@ -46,7 +46,7 @@ public class ServerResponse<T> {
     }
 
     public static String buildOkJsonWithNonStringKey(Object data) {
-        return JSON.toJSONString(buildOK(data), SerializerFeature.WriteNonStringKeyAsString);
+        return JSON.toJSONString(buildOK(data), SerializerFeature.WriteNonStringKeyAsString, SerializerFeature.WriteMapNullValue);
     }
 
 
