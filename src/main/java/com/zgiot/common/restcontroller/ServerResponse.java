@@ -41,14 +41,12 @@ public class ServerResponse<T> {
         return JSON.toJSONString(buildOK(data), SerializerFeature.DisableCircularReferenceDetect);
     }
 
-    public static <T> String buildOkJsonWithNullField(T data) {
+    public static String buildOkJsonWithNullField(Object data) {
         return JSON.toJSONString(buildOK(data), SerializerFeature.WriteMapNullValue);
     }
 
-    public static <T> String buildOkJsonWithNonStringKey(T data) {
-        return JSON.toJSONString(new ServerResponse(
-                "OK", SysException.EC_SUCCESS, data
-        ), SerializerFeature.WriteNonStringKeyAsString, SerializerFeature.WriteMapNullValue);
+    public static String buildOkJsonWithNonStringKey(Object data) {
+        return JSON.toJSONString(buildOK(data), SerializerFeature.WriteNonStringKeyAsString);
     }
 
 
