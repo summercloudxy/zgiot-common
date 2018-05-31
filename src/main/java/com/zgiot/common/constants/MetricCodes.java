@@ -126,4 +126,9 @@ public class MetricCodes {
     public static final String MEDIUM_DOSING = "MEDIUM_DOSING";//合介桶加介
 
 
+    public static final String LE1 = "LE1";//料位1
+
+    public static final String LE2 = "LE2";//料位2
+
+
 }
