@@ -22,9 +22,7 @@ public class GlobalConstants {
     public static final String USER_ID = "userId";
     public static final String USER_UUID = "userUuid";
     public static final String USER_LOGINNAME = "userLoginName";
-
-
-
+    public static final String PLATFORM_CLIENT_ID = "platformClientId";
 
 
 }
